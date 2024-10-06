@@ -1,0 +1,17 @@
+import math
+def
+calcular_area_circulo(radio):
+  ""Calcular el area de un circulo dado su radio""
+  area = math.pi*(radio ** 2)
+  retun area
+def main():
+  print("Calculadora de area de un circulo")
+  radio =
+float(input("introduce el radio del circulo:"))
+  area =
+calcular_area_circulo(radio)
+  print(f"El area del circulo con radio {radio} es: {area:. 2f}")
+
+  if  __name__ =="__main__":
+    main()
+    
