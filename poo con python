@@ -1,0 +1,75 @@
+from sqlalchemy import Column, Integer, String, create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+Base = declarative_base()
+
+class Libro(Base):
+    __tablename__ = 'libros'
+    id = Column(Integer, primary_key=True)
+    titulo = Column(String)
+    autor = Column(String)
+    isbn = Column(String)
+
+engine = create_engine('sqlite:///biblioteca.db')
+Base.metadata.create_all(engine)
+Session = sessionmaker(bind=engine)
+session = Session()
+import json
+import requests
+
+class Biblioteca:
+    def __init__(self):
+        self.libros = []
+
+    def agregar_libro(self, libro):
+        self.libros.append(libro)
+
+    def convertir_libros_a_json(self):
+        return json.dumps([libro.__dict__ for libro in self.libros])
+
+    def obtener_libros_online(self, url):
+        response = requests.get(url)
+        if response.status_code == 200:
+            libros = response.json()
+            for libro in libros:
+                self.agregar_libro(Libro(**libro))
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+biblioteca = Biblioteca()
+libro = Libro(id=1, titulo="El Quijote", autor="Miguel de Cervantes", isbn="978-3-16-148410-0")
+biblioteca.agregar_libro(libro)
+logger.info(f"Libro agregado: {libro}")
+print(biblioteca.convertir_libros_a_json())
+from flask import Flask, jsonify, request
+
+app = Flask(__name__)
+biblioteca = Biblioteca()
+
+@app.route('/libros', methods=['GET'])
+def obtener_libros():
+    return biblioteca.convertir_libros_a_json()
+
+@app.route('/libros', methods=['POST'])
+def agregar_libro():
+    data = request.get_json()
+    libro = Libro(**data)
+    biblioteca.agregar_libro(libro)
+    return jsonify({'mensaje': 'Libro agregado correctamente'}), 201
+
+if __name__ == '__main__':
+    app.run(debug=True)
+import unittest
+
+class BibliotecaTest(unittest.TestCase):
+    def test_agregar_libro(self):
+        biblioteca = Biblioteca()
+        libro = Libro(id=1, titulo="El Quijote", autor="Miguel de Cervantes", isbn="978-3-16-148410-0")
+        biblioteca.agregar_libro(libro)
+        self.assertEqual(len(biblioteca.libros), 1)
+
+if __name__ == '__main__':
+    unittest.main()
