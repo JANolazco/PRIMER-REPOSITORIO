@@ -1,0 +1,95 @@
+<dependencies>
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.8.8</version>
+    </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.20</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>5.5.7.Final</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.14.1</version>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.2</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+import lombok.Data;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Data
+@Entity
+public class Libro {
+    @Id
+    private Long id;
+    private String titulo;
+    private String autor;
+    private String isbn;
+}
+import com.google.gson.Gson;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Biblioteca {
+    private List<Libro> libros = new ArrayList<>();
+    private Gson gson = new Gson();
+
+    public String convertirLibrosAJson() {
+        return gson.toJson(libros);
+    }
+
+    public void agregarLibro(Libro libro) {
+        libros.add(libro);
+    }
+}
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class Principal {
+    private static final Logger logger = LogManager.getLogger(Principal.class);
+
+    public static void main(String[] args) {
+        Biblioteca biblioteca = new Biblioteca();
+        Libro libro = new Libro();
+        libro.setId(1L);
+        libro.setTitulo("El Quijote");
+        libro.setAutor("Miguel de Cervantes");
+        libro.setIsbn("978-3-16-148410-0");
+
+        biblioteca.agregarLibro(libro);
+        logger.info("Libro agregado: " + libro);
+        System.out.println(biblioteca.convertirLibrosAJson());
+    }
+}
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class BibliotecaTest {
+
+    @Test
+    public void testAgregarLibro() {
+        Biblioteca biblioteca = new Biblioteca();
+        Libro libro = new Libro();
+        libro.setId(1L);
+        libro.setTitulo("El Quijote");
+        libro.setAutor("Miguel de Cervantes");
+        libro.setIsbn("978-3-16-148410-0");
+
+        biblioteca.agregarLibro(libro);
+        assertEquals(1, biblioteca.getLibros().size());
+    }
+}
