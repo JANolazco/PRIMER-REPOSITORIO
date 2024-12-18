@@ -3,17 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Create Post</title>
 </head>
 <body>
-    <h1>Blog</h1>
-    {% for post in posts %}
-        <article>
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.content }}</p>
-            <small>{{ post.date_posted }}</small>
-        </article>
-    {% endfor %}
     <h1>Create a New Post</h1>
     <form method="post">
         {% csrf_token %}
@@ -22,6 +14,4 @@
     </form>
 </body>
 </html>
-
-
 
