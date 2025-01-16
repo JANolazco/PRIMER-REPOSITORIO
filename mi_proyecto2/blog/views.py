@@ -8,16 +8,12 @@ def home(request):
     context = {
         'posts': Post.objects.all()
     }
+    print("Mi home")
     return render(request, 'blog/home.html', context)
 
-
-def home(request):
-    context = {
-        'posts': Post.objects.all()
-    }
-    return render(request, 'blog/home.html', context)
 
 def create_post(request):
+    print("Funcion create post")
     if request.method == 'POST':
         form = PostForm(request.POST)
         if form.is_valid():

@@ -6,5 +6,6 @@ class Post(models.Model):
     date_posted = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
+        print("Mi post")
         return self.title
 

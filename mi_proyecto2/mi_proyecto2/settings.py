@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-_0o_81mnx#$6__em)8(cti&cvx01rs&r*1a2&*74^p+6y(ixbt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','localhost', 'localhosts.django']
+CSRF_TRUSTED_ORIGINS = ['http://localhosts.django']
 
 
 # Application definition
@@ -77,10 +78,15 @@ WSGI_APPLICATION = 'mi_proyecto2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'yolo',
+        'USER': 'root',
+        'PASSWORD': 'my-secret-pw',
+        'HOST': 'localhost',
+        'PORT': '30036',
     }
 }
+
 
 
 # Password validation

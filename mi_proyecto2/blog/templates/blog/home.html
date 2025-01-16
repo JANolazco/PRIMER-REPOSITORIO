@@ -15,10 +15,10 @@
         </article>
     {% endfor %}
     <h1>Create a New Post</h1>
-    <form method="post">
+    <form action="/a/post/new/" method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Post</button>
+        <button type="submit">Post</button>                     
     </form>
 </body>
 </html>
