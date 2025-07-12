@@ -1,0 +1,50 @@
+Antes de empezar, datos a tener en cuenta:
+
+Los CV/33 italianos que participarán en el combate serán modificados mediante tecnología metalúrgica avanzada. (Son de diseño y procedencia italianos, pero los utilizarán los albaneses.)
+
+La modificación es la siguiente:
+
+- El casco estará hecho de una aleación de acero cromo vanadio molibdeno (Mo). El blindaje será homogéneo de 20 mm de esta aleación, y la plancha frontal estará inclinada a 60°.
+- El casco se fabricará a partir de una única placa tratada térmicamente y moldeada por una prensa de alta presión, de modo que sea de una sola pieza. Se realizará un tratamiento térmico diferenciado para obtener distintos gradientes de dureza en el blindaje, copiando parcialmente los procesos de diseño y producción de blindaje naval.
+
+El cañón será de alta velocidad, de 33 mm, con un autocargador de tambor de doble maza (seis proyectiles por maza). El comandante/artillero/cargador solo tendrá que recargar manualmente dichos tambores, seleccionando la combinación óptima de municiones.
+
+También se modificará el tamaño del CV/L33: será más ancho y más largo, manteniendo la altura, para que quepan el cañón, el sistema de recarga y el depósito de municiones.
+
+El motor será recalibrado y sustituido para poder generar 14 hp por tonelada. El peso final del CV/L33 será aproximadamente 2,4 veces el del vehículo original.
+
+Con esto aclarado, empezamos la simulación de combate.
+
+Posdata: el enemigo será el ejército griego de 1936, asistido con armamento y municiones suministrados por los británicos.
+
+---
+
+En la penumbra de la madrugada del 23 de julio de 1936, un grupo acorazado albanés, compuesto por 65 CV/L33 modificados y llamado por los albaneses Demi i Egër (“Demonio Feroz”), se dispone a avanzar.
+
+Días antes, la infantería albanesa intentó romper la defensa de la XIX División de Infantería del ejército real griego, pero los cañones de 75 mm de origen británico y toneladas de municiones enviadas por los mismos imposibilitaron el avance, obligando a retirarse con más de 1 200 bajas sin penetrar un solo metro en territorio enemigo.
+
+El alto mando albanés ordenó detener la ofensiva hasta que llegara el Grupi i Trembëdhjetë i Blinduar i Ushtrisë Mbretërore (XIII Cuerpo Acorazado del ejército real), que intentaría forzar la ruptura.
+
+Llegamos así a la madrugada de hoy. Son las 04:45 a. m. El ruido de 65 motores se mezcla con los pasos de la infantería de apoyo, que marcha a 200 m por detrás. La operación no fue planeada en secreto y, definitivamente, el Estado Mayor General (EMG) del ejército griego está al tanto.
+
+La idea del mando albanés es romper con fuerza bruta y abrir un pasadizo de 6 km de ancho para consolidar su posición y dividir al III Ejército de Campo griego, permitiendo que sus fuerzas de infantería y caballería cercenen y aniquilen la agrupación enemiga.
+
+De vuelta al frente, los 65 CV/L33 avanzan desplegados en tres columnas de treinta tanques, con cinco en retaguardia para reforzar cualquier posición que lo requiera. Detrás de ellos marchan cuatro batallones de infantería, esperando a que los tanques ligeros lleguen a las posiciones de las baterías de artillería griegas, situadas cerca del frente.
+
+Los griegos necesitaron acercar sus piezas para frenar la ofensiva anterior, empleando fuego semidirecto y directo de más de veinticuatro tubos de artillería. La misión principal de los tanques es absorber el fuego enemigo y, posteriormente, neutralizar la artillería con fuego de 33 mm prácticamente a bocajarro para maximizar la supresión de la capacidad de fuego enemiga.
+
+En retaguardia, hay doce morteros pesados de 305 mm, herencia de la artillería superpesada austrohúngara de la Primera Guerra Mundial, listos para realizar fuego de contrabatería si los griegos descubren otras piezas ocultas. Cabe destacar que estos “morteros” son, en realidad, obuses adaptados procedentes de piezas navales. No son morteros de avancarga.
+
+Los tanques avanzan. Están a 6 km del objetivo cuando empiezan a recibir un alto volumen de fuego: primero, infantería con ametralladoras pesadas de 12,7 mm y Maxim de 7,62 mm perforantes, más fuego de fusilería antitanque y rifles AT británicos. Estas armas, efectivas contra un CV/L33 italiano normal, apenas dañan a los modificados, pues solo podrían destruir orugas a larga distancia y de frente.
+
+Los tanques ligeros responden disparando a un ritmo de 20–28 disparos por minuto. Se cargaron con varias docenas de municiones HE/FRAG, capaces de diezmar a la infantería enemiga y sus posiciones de tiro.
+
+La artillería de 75 mm griega abre fuego. Los sirvientes introducen proyectil tras proyectil; el ritmo de disparo alcanza 10–12 disparos por minuto. Las veinticuatro piezas disparan munición HE en grandes cantidades, de forma directa y semidirecta, obligando a los vehículos albaneses a maniobrar para evitar impactos directos o zonas de explosión letales.
+
+Un grupo de veinticinco blindados se ha separado de la formación original para atacar la pieza de contrabatería más peligrosa. Siete minutos después, cinco tanques arden en llamas: tres alcanzados directamente por granadas de 75 mm que atravesaron su blindaje de 20 mm y detonaron sus municiones, convirtiendo cada vehículo en una antorcha. Los otros dos fueron destruidos por saturación de fuego y sus tripulantes apenas lograron evacuar.
+
+Pero lo peor está por llegar. Como dijimos, el Estado Mayor General griego sabía de la llegada del grupo blindado enemigo y acercó su armada: dos acorazados predreadnought con cañones de 352 mm y numerosas piezas secundarias, y tres cruceros acorazados con cañones de 203 mm. Cargaron munición shrapnel para maximizar la capacidad destructiva sobre blindados.
+
+Desde el puente del Vasilefs Konstantinos, un predreadnought de 1908, el capitán da órdenes a los otros tres buques. Los cañones de 352 mm y 203 mm elevan sus tubos; el enemigo está a 19 km en el terreno en disputa. Disparan, recargan y vuelven a disparar. Cada salva envía 2,3 toneladas de shrapnel; minutos después, más de 30 toneladas de explosivos destruyen 34 tanques albaneses. Solo los supervivientes huyen hasta sus líneas…
+
+(34 destruidos ahora, más los 5 anteriores.)
